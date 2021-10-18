@@ -1,15 +1,14 @@
 body{
     background-color: burlywood;
-    font-size: 21px;
+    font-size: 15px;
     font-family: sans-serif;
 }
 p{
     color: darkmagenta;
+    clear: both;
 
 } 
-div {
-    color: white;
-}
+
 
 h1 {
     color: chartreuse;
@@ -30,5 +29,86 @@ color: rgb(87, 7, 7);
     background-color: rgb(134, 94, 97);
   }
    
+  span {
+      color: yellow;
+      font-size: 20px;
 
-  
+  }
+
+  .top-section {
+     
+    background: greenyellow;
+  }
+   bottom-section {
+
+    background: indigo;
+   }
+
+
+.intro {
+    font-size: 24px;
+    color: lawngreen;
+}
+
+.highlight {
+
+    background: lightblue;
+}
+.accent-color {
+    color: red;
+}
+
+#main-point {
+
+    color: rgb(5, 85, 45);
+}
+
+/* this is my comment the css box model */
+
+/*margin: empty space around my element
+border: a border/ stroke/ around my elemnt
+padding: empty space with background around my element
+
+all of these add on top of the width and height!
+*/
+
+.box {
+    background: salmon;
+    width: 380px;
+
+    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-width: 5px;
+    border-color: slateblue;
+    border-style: solid;
+
+    border-right-width: 5px;
+    border-right-color: rgb(92, 10, 74);
+    border-right-style: solid;
+
+    padding: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 51px;
+    padding-left: 50px;
+    float: right;
+
+}
+.red-box {
+
+    width: 500px;
+    background: silver;
+    float: left;
+}
+
+.blue-box {
+    height: 400px;
+    width: 700px;
+    background: blue;
+    float: right;
+}
+img {
+    float: left;
+    margin-right: 20px;
+}
