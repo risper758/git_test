@@ -23,6 +23,7 @@ color: rgb(87, 7, 7);
 
 .alert-text {
     color: red;
+    clear: both;
   }
 
   #title {
@@ -71,28 +72,17 @@ padding: empty space with background around my element
 
 all of these add on top of the width and height!
 */
-
 .box {
     background: salmon;
-    width: 380px;
-
-    margin: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-width: 5px;
-    border-color: slateblue;
-    border-style: solid;
-
-    border-right-width: 5px;
-    border-right-color: rgb(92, 10, 74);
-    border-right-style: solid;
+    width: 0px;
 
     padding: 100px;
     padding-top: 50px;
     padding-right: 100px;
     padding-bottom: 51px;
     padding-left: 50px;
-    float: right;
+    float: left;
+    
 
 }
 .red-box {
@@ -112,3 +102,67 @@ img {
     float: left;
     margin-right: 20px;
 }
+ .box1 {
+
+background: red;
+ }
+ .box2 {
+     background: orange;
+ }
+ .box3 {
+     background: yellow;
+ }
+ .box4 {
+     background: green;
+ }
+ .box5 {
+     background: blue;
+ }
+ .box6 {
+     background: indigo;
+ }
+ .box7 {
+     background: violet;
+ }
+ .box8 {
+     background: black;
+ }
+ .box9 {
+     background: pink;
+ }
+ .box10 {
+     background: plum;
+ }
+ .container {
+     background: white;
+     width: 600px;
+     width: 70;
+     margin: 0 auto;
+     max-width: 1000px;
+ }
+ .container1 {
+     background: pink;
+     height: 50vh;
+     width: 50vh;
+     padding: 0.5em;
+     margin: 25vh auto 0;
+
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+
+     justify-content: flex-start;
+     align-items: baseline;
+     align-content: center;
+ }
+
+    
+ .item {
+     background: lightblue;
+     margin: 0.5em;
+     width: 25%;
+ }
+
+ .big {
+     font-size: 2em;
+ }
