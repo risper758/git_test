@@ -141,28 +141,134 @@ background: red;
      max-width: 1000px;
  }
  .container1 {
-     background: pink;
-     height: 50vh;
-     width: 50vh;
+     background: rgb(196, 25, 25);
+     height: 10vh;
+     width: 80vh;
      padding: 0.5em;
      margin: 25vh auto 0;
 
      display: flex;
      flex-direction: row;
-     flex-wrap: nowrap;
+     flex-wrap: wrap;
 
-     justify-content: flex-start;
-     align-items: baseline;
+     justify-content: space-between;
+     align-items: stretch;
      align-content: center;
  }
 
     
- .item {
-     background: lightblue;
-     margin: 0.5em;
-     width: 25%;
+ .item1 {
+     
+     background: rgb(51, 219, 65);
+     border: 4px solid rgb(177, 114, 250);
+     height: 48px;
+     width: 4px;
+     gap: 30px;
  }
 
  .big {
      font-size: 2em;
  }
+ 
+ .container3 {
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  height: 140px;
+  padding: 16px;
+  background: plum;
+  border: 4px solid indigo;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+    
+  }
+  
+  .item3 {
+
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 80px;
+    width: 60px;
+   
+  }  
+  ul1{
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li{
+
+    height: 5vh;
+    flex-grow: 1;
+    float:inline-end;
+  }
+  img{
+max-height: 100%;
+min-width: 100%;
+object-fit: fill;
+object-position: bottom;
+vertical-align: bottom;
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+ul {
+    flex-direction: row-gap: ;;
+}
+
+    li {
+      height: auto;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }
+  .plan ul li {
+      border-bottom: 1px solid rgba(0,0,0,1);
+      padding:10px;
+
+  }
+  .pricing-grid{
+      max-width: 750px;
+      margin: 0 auto;
+      border: red;
+      display: flex;
+      align-items: center;
+  }
+  .price{
+      font-size: 50px;
+      font-family: serif;
+      margin: 10px 0;
+  }
+
+.plan a{
+    text-decoration: none;
+    background: yellow;
+    padding: 10px;
+    color: black;
+    border-radius: 4px;
+}
+.plan{
+    
+    background: rgb(177, 114, 250);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.plan > * {
+    flex:1 1 100%;
+}
+.plan .cta{
+    align-self: flex-end;
+}
