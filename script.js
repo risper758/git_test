@@ -2,11 +2,11 @@ console.log("Hello world")
 console.log(23+97);
 console.log(1+2+3+4+5+6);
 console.log( (4+6+9) /77);
-let a =10;
-console.log(a);
-console.log(9*a);
-let b =7*a;
-console.log(b);
+let e =10;
+console.log(e);
+console.log(9*e);
+let f =7*e;
+console.log(f);
 let max = 57;
 let actual = (max -13);
 let percentage = actual / max;
@@ -36,14 +36,26 @@ console.log(multiple);
 let response = one + 'I am fine — ' + two;
 response;
 console.log(response);
-const button = document.querySelector('button');
 
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+txt.length     // Returns 26
+alert( 2 > 1 );  // true (correct)
+alert( 2 == 1 ); // false (wrong)
+alert( 2 != 1 ); // true (correct)
+let result = 5 > 4; // assign the result of the comparison
+alert( result ); // true
+alert( 'Z' > 'A' ); // true
+alert( 'Glow' > 'Glee' ); // true
+alert( 'Bee' > 'Be' ); // true
+alert( '2' > 1 ); // true, string '2' becomes a number 2
+alert( '01' == 1 ); // true, string '01' becomes a number 1
+let a = 0;
+alert( Boolean(a) ); // false
 
-button onclick = function() {
-  let name = prompt('What is your name?');
-  alert('Hello ' + name + ', nice to see you!');
-  
-}
+let b = "0";
+alert( Boolean(b) ); // true
+
+alert(a == b); // true!
 
 
 // alert("hello!");
