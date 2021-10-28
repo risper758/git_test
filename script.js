@@ -93,31 +93,68 @@ console.log(newString);
 // with the target string, and returns the newly formed string
 // let scores = Array(10);
 // console.log(scores);
-let scores = new Array(9,10,8,7,6);
-console.log(scores);
-let myArray = ['I', 'love', 'chocolate', 'frogs'];
-let madeAString = myArray.join(' ');
-console.log(madeAString);
-// the join() function takes an array, joins
-// all the array items together into a single
-// string, and returns this new string
-let myNumber = Math.random();
-function draw() {
-  ctx.clearRect(0,0,WIDTH,HEIGHT);
-  for (let i = 0; i < 100; i++) {
-    ctx.beginPath();
-    ctx.fillStyle = 'rgba(255,0,0,0.5)';
-    ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
-    ctx.fill();
+// let scores = new Array(9,10,8,7,6);
+// console.log(scores);
+// let myArray = ['I', 'love', 'chocolate', 'frogs'];
+// let madeAString = myArray.join(' ');
+// console.log(madeAString);
+// // the join() function takes an array, joins
+// // all the array items together into a single
+// // string, and returns this new string
+// let myNumber = Math.random();
+// function draw() {
+//   ctx.clearRect(0,0,WIDTH,HEIGHT);
+//   for (let i = 0; i < 100; i++) {
+//     ctx.beginPath();
+//     ctx.fillStyle = 'rgba(255,0,0,0.5)';
+//     ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
+//     ctx.fill();
     
+//   }
+// }
+// const canvas = document.querySelector('canvas');
+// const ctx = canvas.getContext('2d');
+// ctx.fillStyle = 'green';
+// ctx.fillRect(10, 10, 100, 100);
+// let add7= '+7'
+// console.log(add7);
+// let multiply = (5*5);
+// console.log(multiply);
+// let capitalize = 'risper';
+// console.log(capital);
+// let Lastletter = 'abcd';
+// console.log(lastletter);
+// let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+// for (let i = 1; i <= answer; i++) {
+//   if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+// let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+// for (let i = 1; i <= answer; i++) {
+//   if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
   }
 }
-const canvas = document.querySelector('canvas');
-const ctx = canvas.getContext('2d');
-ctx.fillStyle = 'green';
-ctx.fillRect(10, 10, 100, 100);
-
-
-
 // alert("hello!");
 // document.write("This is iwritten from javascript!"); 
