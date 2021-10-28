@@ -73,12 +73,50 @@ txt.length     // Returns 26
 // undefined === null //false
 // null == "\n0\n" //false
 // null === +"\n0\n" //false
-const button = document.querySelector('button');
+// const button = document.querySelector('button');
 
-button.onclick = function() {
-  let name = prompt('What is your name?');
-  alert('Hello ' + name + ', nice to see you!');
+// button.onclick = function() {
+//   let name = prompt('What is your name?');
+//   alert('Hello ' + name + ', nice to see you!');
+// }
+// function favoriteAnimal(animal) {
+//   console.log(animal + " is my favorite animal!")
+// }
+
+// favoriteAnimal('Goat');
+// console.log(favoriteAnimal('Goat'));
+let myText = 'I am a string';
+let newString = myText.replace('string', 'sausage');
+console.log(newString);
+// the replace() string function takes a source string,
+// and a target string and replaces the source string,
+// with the target string, and returns the newly formed string
+// let scores = Array(10);
+// console.log(scores);
+let scores = new Array(9,10,8,7,6);
+console.log(scores);
+let myArray = ['I', 'love', 'chocolate', 'frogs'];
+let madeAString = myArray.join(' ');
+console.log(madeAString);
+// the join() function takes an array, joins
+// all the array items together into a single
+// string, and returns this new string
+let myNumber = Math.random();
+function draw() {
+  ctx.clearRect(0,0,WIDTH,HEIGHT);
+  for (let i = 0; i < 100; i++) {
+    ctx.beginPath();
+    ctx.fillStyle = 'rgba(255,0,0,0.5)';
+    ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
+    ctx.fill();
+    
+  }
 }
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = 'green';
+ctx.fillRect(10, 10, 100, 100);
+
 
 
 // alert("hello!");
