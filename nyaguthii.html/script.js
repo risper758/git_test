@@ -100,4 +100,50 @@ function game() {
 }
 
 // game();
+// const sumArray = function(array) {
+//     let sum = 0;
+//     array.forEach(function(number) {
+//       sum += number;
+//     });
+//     return sum;
+//   };
+  
+//   sumArray([2, 2, 2]);
+//   let reallyReallyLongLine = something + somethingElse + anotherThing +
+// 		howManyTacos + oneMoreReallyLongThing;
+//         // Good
+// const numberOfThings = 10;
+// const myName = "Thor";
+// const selected = true;
+// // Good
+// function getCount() {
+//     return numberOfThings;
+  
+//     const helloWorld = require('./helloWorld');
+//     describe('Hello World', function() {
+//       test('says hello world', function() {
+//       test('says "Hello, World!"', function() {
+//         expect(helloWorld()).toEqual('Hello, World!');
+//       });
+//     });
+    
+    const container = document.querySelector('#container');
+    // select the #container div 
+    
+    console.dir(container.firstElementChild);                      
+    // select the first child of #container => .display
+    
+    const controls = document.querySelector('.controls');   
+    // select the .controls div
+    
+    console.dir(controls.previousElementSibling);                  
+    // selects the prior sibling => .display
+    const div = document.createElement('div');
+    div.style.color = 'blue';                                      
+        // adds the  style rule
 
+div.style.cssText = 'color: blue; background: white';          
+        // adds some style rules
+
+div.setAttribute('style', 'color: blue; background: white');    
+        // adds some style rules
