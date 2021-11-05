@@ -43,30 +43,30 @@ function playRound() {
 
     // compare player and computer selections
     // return if player won or not
-    if playerSelection == computerSelection {
+    if (playerSelection == computerSelection) {
         return "replay";
     }    
-    if playerSelection == "rock" {
-        if computerSelection == "paper" {
+    if (playerSelection == "rock") {
+        if (computerSelection == "paper") {
             return "lost";
         }
-        if computerSelection == "scissors" {
+        if (computerSelection == "scissors") {
             return "won";
         }    
     }
-    if playerSelection == "paper" {
-        if computerSelection == "rock" {
+    if (playerSelection == "paper") {
+        if (computerSelection == "rock") {
             return "win";
         }
-        if computerSelection == "scissors" {
+        if (computerSelection == "scissors") {
             return "lost";
         }    
     }
-    if playerSelection == "scissors" {
-        if computerSelection == "paper" {
+    if (playerSelection == "scissors") {
+        if (computerSelection == "paper") {
             return "won";
         }
-        if computerSelection == "rocker" {
+        if (computerSelection == "rocker") {
             return "lost";
         }    
     }
@@ -79,7 +79,7 @@ function game() {
    
    for (let totalgames=0; totalgames<5; totalgames++){
        let result = playRound();
-       if result == "won" {
+       if (result == "won") {
            playerscore++;
        } else {
            computerscore = computerscore + 1;
