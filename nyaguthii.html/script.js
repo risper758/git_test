@@ -1,13 +1,13 @@
-// function computerPlay() {
-// //     var i =Math.floor(Math.random() * 3); // this will return a random number between 0 and 2
-//     if (i == 0) {
-//         return "paper";
-//     }
-//     if (i == 1){
-//         return "scissor";
-//     }
-//     return "rock"
-// }
+function computerPlay() {
+    var i = Math.floor(Math.random() * 3); // this will return a random number between 0 and 2
+    if (i == 0) {
+        return "paper";
+    }
+    if (i == 1){
+        return "scissor";
+    }
+    return "rock"
+}
 
 // function playRound(playerSelection, computerSelection) {
 //     // your code here!
@@ -77,7 +77,7 @@ function game() {
    var playerscore = 0;
    var computerscore = 0;
    
-   for (let totalgames=0; totalgames<5; totalgames++){
+   for (let totalgames=0; totalgames<1; totalgames++){
        let result = playRound();
        if (result == "won") {
            playerscore++;
@@ -86,16 +86,18 @@ function game() {
        }
    }
     
-   console.log("End of game :)");               
+  // document.write("End of game :)");               
    console.log(playerscore);
    console.log(computerscore);
-   if computerscope > playerscore {
-       comsole.log("You lost!");
+    if (computerscore > playerscore) {
+        var results = document.getElementById("results");
+        results.innerHTML = "You lost";
+    //    console.log("You lost!");
    }
    // play 5 rounds
    // keep track if I won/lost
    // print out results from 5 rounds
 }
 
-game();
+// game();
 
