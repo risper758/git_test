@@ -1,13 +1,13 @@
-function computerPlay() {
-    var i = Math.floor(Math.random() * 3); // this will return a random number between 0 and 2
-    if (i == 0) {
-        return "paper";
-    }
-    if (i == 1){
-        return "scissor";
-    }
-    return "rock"
-}
+// function computerPlay() {
+//     var i = Math.floor(Math.random() * 3); // this will return a random number between 0 and 2
+//     if (i == 0) {
+//         return "paper";
+//     }
+//     if (i == 1){
+//         return "scissor";
+//     }
+//     return "rock"
+// }
 
 // function playRound(playerSelection, computerSelection) {
 //     // your code here!
@@ -35,69 +35,69 @@ function computerPlay() {
 //     }
 //   }
 // }
-// function game
+// // function game
 
-function playRound() {
-    var playerSelection = prompt("What do you choose? rock, paper or scissor");
-    var computerSelection = computerPlay();
+// function playRound() {
+//     var playerSelection = prompt("What do you choose? rock, paper or scissor");
+//     var computerSelection = computerPlay();
 
-    // compare player and computer selections
-    // return if player won or not
-    if (playerSelection == computerSelection) {
-        return "replay";
-    }    
-    if (playerSelection == "rock") {
-        if (computerSelection == "paper") {
-            return "lost";
-        }
-        if (computerSelection == "scissors") {
-            return "won";
-        }    
-    }
-    if (playerSelection == "paper") {
-        if (computerSelection == "rock") {
-            return "win";
-        }
-        if (computerSelection == "scissors") {
-            return "lost";
-        }    
-    }
-    if (playerSelection == "scissors") {
-        if (computerSelection == "paper") {
-            return "won";
-        }
-        if (computerSelection == "rocker") {
-            return "lost";
-        }    
-    }
-}
+//     // compare player and computer selections
+//     // return if player won or not
+//     if (playerSelection == computerSelection) {
+//         return "replay";
+//     }    
+//     if (playerSelection == "rock") {
+//         if (computerSelection == "paper") {
+//             return "lost";
+//         }
+//         if (computerSelection == "scissors") {
+//             return "won";
+//         }    
+//     }
+//     if (playerSelection == "paper") {
+//         if (computerSelection == "rock") {
+//             return "win";
+//         }
+//         if (computerSelection == "scissors") {
+//             return "lost";
+//         }    
+//     }
+//     if (playerSelection == "scissors") {
+//         if (computerSelection == "paper") {
+//             return "won";
+//         }
+//         if (computerSelection == "rocker") {
+//             return "lost";
+//         }    
+//     }
+// }
 
-function game() {
-   console.log("Let's play 5 rounds");
-   var playerscore = 0;
-   var computerscore = 0;
+// function game() {
+//    console.log("Let's play 5 rounds");
+//    var playerscore = 0;
+//    var computerscore = 0;
    
-   for (let totalgames=0; totalgames<1; totalgames++){
-       let result = playRound();
-       if (result == "won") {
-           playerscore++;
-       } else {
-           computerscore = computerscore + 1;
-       }
-   }
+//    for (let totalgames=0; totalgames<1; totalgames++){
+//        let result = playRound();
+//        if (result == "won") {
+//            playerscore++;
+//        } else {
+//            computerscore = computerscore + 1;
+//        }
+//    }
     
-  // document.write("End of game :)");               
-   console.log(playerscore);
-   console.log(computerscore);
-    if (computerscore > playerscore) {
-        var results = document.getElementById("results");
-        results.innerHTML = "You lost";
+//   // document.write("End of game :)");               
+//    console.log(playerscore);
+//    console.log(computerscore);
+//     if (computerscore > playerscore) {
+//         var results = document.getElementById("results");
+//         results.innerHTML = "You lost";
     //    console.log("You lost!");
-   }
+//    }
    // play 5 rounds
    // keep track if I won/lost
    // print out results from 5 rounds
-}
+// }
 
 // game();
 // const sumArray = function(array) {
@@ -119,31 +119,41 @@ function game() {
 // function getCount() {
 //     return numberOfThings;
   
-//     const helloWorld = require('./helloWorld');
-//     describe('Hello World', function() {
-//       test('says hello world', function() {
-//       test('says "Hello, World!"', function() {
-//         expect(helloWorld()).toEqual('Hello, World!');
-//       });
-//     });
+    // const helloWorld = require('./helloWorld');
     
-    const container = document.querySelector('#container');
-    // select the #container div 
+    // describe('Hello World', function() {
+    //   test('says hello world', function() {
+    //   test('says "Hello, World!"', function() {
+    //     expect(helloWorld()).toEqual('Hello, World!');
+    //   });
+    // });
     
-    console.dir(container.firstElementChild);                      
-    // select the first child of #container => .display
     
-    const controls = document.querySelector('.controls');   
-    // select the .controls div
+//     const container = document.querySelector('#container');
+//      select the #container div 
     
-    console.dir(controls.previousElementSibling);                  
-    // selects the prior sibling => .display
-    const div = document.createElement('div');
-    div.style.color = 'blue';                                      
-        // adds the  style rule
+//     console.dir(container.firstElementChild);                      
+//      select the first child of #container => .display
+    
+//     const controls = document.querySelector('.controls');   
+//      select the .controls div
+    
+//     console.dir(controls.previousElementSibling);                  
+//     selects the prior sibling => .display
+//     const container = document.querySelector('#container');
 
-div.style.cssText = 'color: blue; background: white';          
-        // adds some style rules
+const content = document.createElement('div');
+content.classList.add('content');
+content.textContent = 'The name is Risper Sobayeni!';
 
-div.setAttribute('style', 'color: blue; background: white');    
-        // adds some style rules
+container.appendChild(content);
+// function appendText() {
+//   var text1 = "<p>text.</p>"; //text 1
+//   var text2 = "<h1>text<h1>"; //text 2
+// }
+function appendText() {
+  var txt1 = "<p>Text.</p>";        // Create text with HTML
+  var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+  var txt3 = document.createElement("p");
+  txt3.innerHTML = "Text.";         // Create text with DOM
+  $("body").append(txt1, txt2, txt3);   // Append new elements
